@@ -4,6 +4,7 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
+    "System.Text.RegularExpressions": "[4.3.1]",
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.MicrosoftOffice365.Activities": "[2.6.24]",
     "UiPath.System.Activities": "[24.10.4]",

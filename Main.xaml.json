@@ -6,18 +6,6 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "in_Ciudad",
-      "DisplayName": "in_Ciudad",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": null,
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "in_Apellido",
       "DisplayName": "in_Apellido",
       "Category": null,
@@ -32,6 +20,18 @@
     {
       "Name": "in_Correo",
       "DisplayName": "in_Correo",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Provincia",
+      "DisplayName": "in_Provincia",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
