@@ -3,9 +3,10 @@
     <x:Property Name="in_Provincia" Type="InArgument(x:String)" />
     <x:Property Name="in_Apellido" Type="InArgument(x:String)" />
     <x:Property Name="in_Correo" Type="InArgument(x:String)" />
+    <x:Property Name="out_Contactos" Type="OutArgument(x:Int32)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1710,10388</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1710,10348</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -138,19 +139,19 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GuiaTelefonica" sap:VirtualizedContainerService.HintSize="1720,10323" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GuiaTelefonica" sap:VirtualizedContainerService.HintSize="1720,10283" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Utilizar Navegador Edge: :: Guía Telefónica CNT EP ::" sap:VirtualizedContainerService.HintSize="1658,10235" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1a8726b6-44c6-4d80-b858-c42a46157f43" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Utilizar Navegador Edge: :: Guía Telefónica CNT EP ::" sap:VirtualizedContainerService.HintSize="1658,10195" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="1a8726b6-44c6-4d80-b858-c42a46157f43" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1624,9995" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1624,9955" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strCaptcha" />
               <Variable x:TypeArguments="sd:DataTable" Name="dtTabla" />
@@ -269,7 +270,7 @@
                 </uix:TargetAnchorable>
               </uix:NGetAttributeGeneric.Target>
             </uix:NGetAttributeGeneric>
-            <ui:RetryScope ContinueOnError="False" DisplayName="Reintentar ámbito" sap:VirtualizedContainerService.HintSize="1562,9038" sap2010:WorkflowViewState.IdRef="RetryScope_1" RetryInterval="00:00:05">
+            <ui:RetryScope ContinueOnError="False" DisplayName="Reintentar ámbito" sap:VirtualizedContainerService.HintSize="1562,8998" sap2010:WorkflowViewState.IdRef="RetryScope_1" RetryInterval="00:00:05">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
                   <Sequence DisplayName="Acción" sap:VirtualizedContainerService.HintSize="529,7462" sap2010:WorkflowViewState.IdRef="Sequence_43">
@@ -858,15 +859,15 @@
               </ui:RetryScope.ActivityBody>
               <ui:RetryScope.Condition>
                 <ActivityFunc x:TypeArguments="x:Boolean">
-                  <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Captcha'" sap:VirtualizedContainerService.HintSize="1520,1391" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1a8726b6-44c6-4d80-b858-c42a46157f43" Timeout="2" Version="V3">
+                  <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Captcha'" sap:VirtualizedContainerService.HintSize="1520,1351" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1a8726b6-44c6-4d80-b858-c42a46157f43" Timeout="2" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1016,1174" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                      <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1016,1134" sap2010:WorkflowViewState.IdRef="Sequence_46">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NCheckState DisplayName="Comprobar estado de aplicación ':: No'" sap:VirtualizedContainerService.HintSize="954,1084" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="1a8726b6-44c6-4d80-b858-c42a46157f43" Timeout="2" Version="V3">
+                        <uix:NCheckState DisplayName="Comprobar estado de aplicación ':: No'" sap:VirtualizedContainerService.HintSize="954,1044" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="1a8726b6-44c6-4d80-b858-c42a46157f43" Timeout="2" Version="V3">
                           <uix:NCheckState.IfExists>
                             <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="450,287" sap2010:WorkflowViewState.IdRef="Sequence_48">
                               <sap:WorkflowViewStateService.ViewState>
@@ -916,10 +917,7 @@
                                       </CSharpValue.Result>dtTabla</CSharpValue>
                                   </InArgument>
                                   <OutArgument x:TypeArguments="x:Int32" x:Key="int_out_Contactos">
-                                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">
-                                      <CSharpReference.Result>
-                                        <OutArgument x:TypeArguments="Location(x:Int32)" />
-                                      </CSharpReference.Result>intContactos</CSharpReference>
+                                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">out_Contactos</CSharpReference>
                                   </OutArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>
@@ -932,10 +930,7 @@
                                       </CSharpValue.Result>in_Correo</CSharpValue>
                                   </InArgument>
                                   <InArgument x:TypeArguments="x:Int32" x:Key="int_in_Contactos">
-                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">
-                                      <CSharpValue.Result>
-                                        <OutArgument x:TypeArguments="x:Int32" />
-                                      </CSharpValue.Result>intContactos</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">out_Contactos</CSharpValue>
                                   </InArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>

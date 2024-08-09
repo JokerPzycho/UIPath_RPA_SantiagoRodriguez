@@ -4,6 +4,7 @@
     <x:Property Name="in_Apellido" Type="InArgument(x:String)" />
     <x:Property Name="in_Correo" Type="InArgument(x:String)" />
     <x:Property Name="in_Provincia" Type="InArgument(x:String)" />
+    <x:Property Name="out_Contactos" Type="OutArgument(x:Int32)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
   <sap:VirtualizedContainerService.HintSize>1233,812</sap:VirtualizedContainerService.HintSize>
@@ -167,6 +168,9 @@
         <InArgument x:TypeArguments="x:String" x:Key="in_Correo">
           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">in_Correo</CSharpValue>
         </InArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="out_Contactos">
+          <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">out_Contactos</CSharpReference>
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
